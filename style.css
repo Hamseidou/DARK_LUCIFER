@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f5f7fb;
+    color: #1f2937;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3a8a;
+    padding: 15px 40px;
+    color: white;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #e0e7ff;
+}
+
+.hero h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #374151;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #2563eb;
+}
+
+
+section{
+    padding: 40px 20px;
+}
+
+
+section h1, section h2{
+    margin-bottom: 15px;
+}
+
+section p, section li{
+    line-height: 1.6;
+}
+
+
+.experience h3{
+    margin-top: 15px;
+    color: #1e3a8a;
+}
+
+.experience p{
+    margin-bottom: 10px;
+}
+
+
+ul{
+    margin-left: 20px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2563eb;
+}
+
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #1e3a8a;
+    color: white;
+    margin-top: 30px;
+
+}
+footer a {
+    color: #ffffff;
+    justify-content: space-between;
+    margin-left: 100px;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    .hero h1{
+        font-size: 24px;
+    }
+}
+
+#services {
+    max-width: 750px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #1e3c72;
+    position: relative;
+}
+
+
+#services h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1e3c72;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+#services ul li {
+    background: #f0f4ff;
+    margin: 12px 0;
+    padding: 14px 18px;
+    border-left: 5px solid #2a5298;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.25s ease;
+}
+
+
+#services ul li:hover {
+    background: #e3ecff;
+    transform: translateX(6px);
+    cursor: pointer;
+}
+
+#publications {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+#publications h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 25px;
+}
+
+#publications h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #2a5298;
+}
+
+#publications .videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+#publications .videos video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+#publications .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+#publications .images img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#publications .images img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
